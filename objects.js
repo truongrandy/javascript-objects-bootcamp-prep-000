@@ -1,21 +1,13 @@
-var meals = {
-  breakfast: "oatmeal",
-  lunch: "turkey sandwich",
-  dinner: "steak and potatoes"
-};
+var playlist = {artistName: 'songTitle'}
 
+function updatePlaylist(playlist, artistName, songTitle)
+{
+	playlist['Phil Ochs'] = "Here's to the State of Mississippi";
+	return playlist
+}
 
-Object.assign({}, meals, { breakfast: ['oatmeal', 'banana'] })
-// returns {
-//   breakfast: ["oatmeal", "banana"],
-//   lunch: "turkey sandwich",
-//   dinner: "steak and potatoes"
-//  }
-
-
-meals
-// still {
-//   breakfast: "oatmeal",
-//   lunch: "turkey sandwich",
-//   dinner: "steak and potatoes"
-// };
+function removeFromPlaylist(playlist, artistName)
+{
+	delete playlist.Kanye;
+	return playlist
+}
